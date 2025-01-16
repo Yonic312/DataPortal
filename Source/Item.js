@@ -29,9 +29,16 @@ Item = class Item extends AView
 	{
 		super.onActiveDone(isFirst)
 
-		//TODO:edit here
+        const getMainCntr = AContainer.findOpenContainer('main').view;
+
+        const getMainAccordion = getMainCntr.preferList.selectedItem.innerText;
+        const mainAccordion = getMainAccordion.split(/\s+/)[0]; // 가져온 텍스트에서 그룹 이름만 가져오기
+        console.log(mainAccordion);
+
+        // this.groupTitle.setData(mainAccordion);
+
+        console.log('mainAccordion : ',mainAccordion);
 
 	}
 
 }
-
