@@ -1,0 +1,140 @@
+<div data-base="AView" data-class="MainView" class="AView-Style" style="left: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(20, 24, 31); min-width: 1900px; min-height: 1080px;" data-browser-width="1900" data-browser-height="1080" data-class-map="{&quot;afc&quot;:[&quot;AView&quot;,&quot;AImage&quot;,&quot;ALabel&quot;,&quot;AButton&quot;,&quot;ATextField&quot;,&quot;ASelectBox&quot;,&quot;AGrid&quot;,&quot;AAccordion&quot;],&quot;mdfc&quot;:[&quot;ACalendarPicker&quot;]}" data-max-abutton="1"
+    ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: auto; left: 0px; position: relative; top: 0px; background-color: rgba(0, 0, 0, 0);" id="MainView--top"
+        ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; left: 0px; top: 0px; position: relative; padding-left: 16px; height: 66px; background-color: rgba(0, 0, 0, 0); border-bottom: 1px solid rgb(48, 57, 70);"
+            ><img data-base="AImage" data-class="AImage" class="AImage-Style" style="width: 140px; height: 48px; left: 0px; top: calc(50% - 24px); position: relative;" src="Assets/Img/itfin_logo.png" data-center-y="true"
+        ></div
+    ></div
+    ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: calc((100% - 0px) - 146px); left: 0px; top: 0px; position: relative; background-color: rgba(0, 0, 0, 0); padding-left: 20px; padding-top: 20px; padding-right: 20px; margin-left: 0px; margin-top: 0px; min-height: 934px;" id="MainView--body" data-sgap-height="1"
+        ><div data-base="AView" data-class="AView" class="AView-Style" style="width: calc((100% - 0px) - 550px); left: 0px; top: 0px; position: relative; border-radius: 15px; color: rgb(0, 0, 0); background-color: rgb(30, 36, 46); padding-top: 15px; float: left; margin-left: 0px; height: calc((100% - 0px) - 24px);" id="MainView--mainContent" data-sgap-width="1" data-sgap-height="1"
+            ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: 32px; left: 0px; position: relative; background-color: rgba(0, 0, 0, 0); border-bottom: 1px solid rgb(51, 51, 51);"
+                ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; left: 0px; top: 0px; position: relative; color: rgb(147, 159, 178); font-size: 20px; font-weight: bold; margin-left: 15px; margin-top: 0px;">KRX상장종목정보</label
+                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 60px; height: 22px; left: 0px; top: 0px; position: relative; float: right; margin-top: 0px; background-color: rgb(48, 57, 70); border-width: 0px; margin-right: 15px; border-radius: 5px; color: rgb(147, 159, 178); font-weight: bold; margin-left: 0px;" data-listener-click="MainView:onClickGetKrxList">검색</button
+                ><input data-base="ATextField" data-class="ATextField" type="text" value="" class="ATextField-Style" autocomplete="off" style="width: 160px; height: 22px; top: 0px; position: relative; float: right; right: 0px; margin-right: 5px; background-color: rgb(48, 57, 70); border-width: 0px; margin-left: 5px; border-radius: 5px; color: rgb(217, 217, 217);" id="MainView--krxText"
+                ><select data-base="ASelectBox" data-class="ASelectBox" class="ASelectBox-Style" style="width: 100px; height: 22px; left: 0px; top: 0px; position: relative; float: right; margin-right: 5px; margin-top: 0px; font-weight: bold; color: rgb(147, 159, 178); background-color: rgb(48, 57, 70); border-width: 0px; border-radius: 5px; margin-left: 5px;" id="MainView--krxSelect"
+                    ><option value="likeSrtnCd">종목코드</option
+                    ><option value="likeItmsNm">종목명</option
+                ></select
+                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 30px; height: 22px; left: 0px; top: 0px; position: relative; float: right; background-color: rgb(48, 57, 70); color: rgb(147, 159, 178); border-radius: 5px;" data-listener-click="MainView:onClickafterCal">&gt;</button
+                ><div data-base="ACalendarPicker" data-class="ACalendarPicker" class="ACalendarPicker-Style" style="left: 0px; top: 0px; position: relative; float: right; color: rgb(147, 159, 178); border-width: 0px; border-color: rgb(48, 57, 70); background-color: rgb(48, 57, 70); margin-right: 5px; width: 110px; border-radius: 5px; height: 22px; margin-left: 5px;" id="MainView--calendar" data-style=""
+                    ><div style="width:100%; height:100%"
+                        ><div data-base="AView" class="AView-Style ACalendarPicker-Style" data-class="ACalendarPickerItem" data-day-mode="0" data-multi-mode="0" data-format="yyyy-MM-dd" style="width: 100%; height: 100%; left: 0px; top: 0px; border: 1px solid rgb(187, 187, 187);" data-work-size="60px|40px|325px|32px" data-class-map="{&quot;afc&quot;:[&quot;AView&quot;,&quot;ATextField&quot;,&quot;AButton&quot;]}" data-fullview="true"
+                            ><input data-listener-change="ACalendarPickerItem:onChange" data-listener-blur="ACalendarPickerItem:onBlur" data-listener-keyup="ACalendarPickerItem:onKeyup" data-base="ATextField" data-class="ATextField" class="ATextField-Style" data-listener-focus="ACalendarPickerItem:onFocus" pattern="" type="text" value="2025-01-31" autocomplete="off"
+                            ><button class="AButton-Style Calendar_Button Calendar_Button_Down" data-base="AButton" data-class="AButton" data-listener-click="ACalendarPickerItem:onClickCal" tabindex="-1"></button
+                        ></div
+                    ></div
+                ></div
+                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 30px; height: 22px; left: 0px; top: 0px; position: relative; float: right; background-color: rgb(48, 57, 70); color: rgb(147, 159, 178); border-radius: 5px;" data-listener-click="MainView:onClickbeforeCal">&lt;</button
+            ></div
+            ><div data-base="AGrid" data-class="AGrid" data-clear-rowtmpl="true" data-ver="3301" class="AGrid-Style" data-hide-footer="true" style="width: 100%; height: calc((100% - 0px) - 84px); left: 0px; position: relative; visibility: visible; background-color: rgba(0, 0, 0, 0); top: 0px; margin-left: 0px; border-style: solid; border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(147, 159, 178); border-bottom-width: 1px;" data-sgap-height="1" id="MainView--listedStockGrid" data-fullrow-select="true"
+                ><div class="grid-scroll-area" style=""
+                    ><table class="grid-header-table" align="center"
+                        ><colgroup
+                            ><col
+                            ><col width="170"
+                            ><col width="190"
+                            ><col width="350"
+                            ><col width="50"
+                        ></colgroup
+                        ><thead align="center" class="head-prop" style="display: table-header-group;"
+                            ><tr height="22px" style="background-color: rgb(147, 159, 178);"
+                                ><td class="gridTitle" height="44" style="font-size: 16px; border-width: 1px; border-style: solid; border-color: rgb(147, 159, 178);" data-style="gridTitle">회사 정식 명칭</td
+                                ><td class="gridTitle" style="font-size: 16px; border-color: rgb(147, 159, 178); border-style: solid; border-width: 1px;" data-style="gridTitle">시장 구분</td
+                                ><td class="gridTitle" style="font-size: 16px; border-color: rgb(147, 159, 178); border-style: solid; border-width: 1px;" data-style="gridTitle">종목코드</td
+                                ><td class="gridTitle" style="font-size: 16px; border-color: rgb(147, 159, 178); border-style: solid; border-width: 1px;" data-style="gridTitle">회사 이름</td
+                                ><td class="gridTitle" style="font-size: 16px; border-color: rgb(147, 159, 178); border-style: solid; border-width: 1px;" data-style="gridTitle">관심</td
+                            ></tr
+                        ></thead
+                    ></table
+                    ><table class="grid-body-table" align="center"
+                        ><colgroup
+                            ><col
+                            ><col width="170"
+                            ><col width="190"
+                            ><col width="350"
+                            ><col width="50"
+                        ></colgroup
+                        ><thead align="center" class="head-prop"
+                            ><tr height="0px" style="height: 0px;"
+                                ><td height="44" style="font-size: 16px; border-width: 1px; border-style: solid; border-color: rgb(147, 159, 178);"></td
+                                ><td style="font-size: 16px; border-color: rgb(147, 159, 178); border-style: solid; border-width: 1px;"></td
+                                ><td style="font-size: 16px; border-color: rgb(147, 159, 178); border-style: solid; border-width: 1px;"></td
+                                ><td style="font-size: 16px; border-color: rgb(147, 159, 178); border-style: solid; border-width: 1px;"></td
+                                ><td style="font-size: 16px; border-color: rgb(147, 159, 178); border-style: solid; border-width: 1px;"></td
+                            ></tr
+                        ></thead
+                        ><tbody align="center" class="body-prop"
+                            ><tr height="22px" style="background-color: rgba(0, 0, 0, 0);"
+                                ><td class="" height="33" style="color: rgb(255, 255, 255); font-size: 14px; border-width: 1px; border-style: solid; border-color: rgb(147, 159, 178);">1,1</td
+                                ><td class="" style="color: rgb(255, 255, 255); font-size: 14px; border-color: rgb(147, 159, 178); border-style: solid; border-width: 1px;"></td
+                                ><td class="" style="color: rgb(255, 255, 255); font-size: 14px; border-color: rgb(147, 159, 178); border-style: solid; border-width: 1px;"></td
+                                ><td class="" style="color: rgb(255, 255, 255); font-size: 14px; border-color: rgb(147, 159, 178); border-style: solid; border-width: 1px;"></td
+                                ><td class="" style="color: rgb(255, 255, 255); font-size: 14px; border-color: rgb(147, 159, 178); border-style: solid; border-width: 1px;"></td
+                            ></tr
+                        ></tbody
+                    ></table
+                    ><table class="grid-footer-table" align="center"
+                        ><colgroup
+                            ><col
+                            ><col width="170"
+                            ><col width="190"
+                            ><col width="350"
+                            ><col width="50"
+                        ></colgroup
+                        ><thead align="center" class="head-prop"
+                            ><tr height="0px"
+                                ><td></td
+                                ><td></td
+                                ><td></td
+                                ><td></td
+                                ><td></td
+                            ></tr
+                        ></thead
+                        ><tfoot align="center" class="foot-prop" style="display: none;"
+                            ><tr height="22px"
+                                ><td style="border-top: 1px solid rgb(147, 159, 178);">col1</td
+                                ><td style="border-top: 1px solid rgb(147, 159, 178);"></td
+                                ><td style="border-top: 1px solid rgb(147, 159, 178);"></td
+                                ><td style="border-top: 1px solid rgb(147, 159, 178);"></td
+                                ><td style="border-top: 1px solid rgb(147, 159, 178);"></td
+                            ></tr
+                        ></tfoot
+                    ></table
+                ></div
+            ></div
+            ><div data-base="AView" data-class="AView" class="AView-Style" style="left: 0px; position: relative; background-color: rgba(0, 0, 0, 0); margin-left: 0px; width: calc((100% - 0px) - 0%); height: 40px; margin-top: 8px;" data-sgap-width="2"
+                ><div data-base="AView" data-class="AView" class="AView-Style" style="width: auto; height: 100%; left: calc(50% - 145.5px); top: 0px; position: absolute; background-color: rgba(0, 0, 0, 0);" data-center-x="true"
+                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 30px; height: 22px; position: relative; color: rgb(147, 159, 178); border-radius: 5px; background-color: rgb(48, 57, 70); margin-top: 0px; top: calc(50% - 11px); display: block; left: 0px; float: left;" id="" data-listener-click="MainView:onClickFirstKrxPage" data-center-y="true">&lt;&lt;&lt;</button
+                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 30px; height: 22px; position: relative; color: rgb(147, 159, 178); border-radius: 5px; margin-left: 5px; background-color: rgb(48, 57, 70); top: calc(50% - 11px); display: block; left: 0px; float: left;" id="" data-listener-click="MainView:onClickPrevKrxPage10" data-center-y="true">&lt;&lt;</button
+                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 30px; height: 22px; position: relative; color: rgb(147, 159, 178); border-radius: 5px; margin-right: 10px; background-color: rgb(48, 57, 70); top: calc(50% - 11px); display: block; margin-left: 5px; left: 0px; float: left;" id="" data-listener-click="MainView:onClickPrevKrxPage" data-center-y="true">&lt;</button
+                    ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="height: auto; position: relative; color: rgb(147, 159, 156); font-size: 14px; font-weight: bold; margin-left: 5.00001px; width: auto; top: calc(50% - 7.5px); display: block; float: left; left: 0px; margin-top: 2px;" id="MainView--nowPage" data-center-y="true">0</label
+                    ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: 8px; height: 15px; position: relative; color: rgb(147, 159, 156); font-size: 14px; font-weight: bold; top: calc(50% - 7.5px); display: block; float: left; left: 0px; margin-top: 2px; margin-left: 5px; margin-right: 5px;" data-center-y="true">/</label
+                    ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: 19px; position: relative; color: rgb(147, 159, 156); font-size: 14px; font-weight: bold; margin-right: 5px; top: calc(50% - 9.5px); display: block; float: left; left: 0px; margin-left: 0px;" id="MainView--totalCount" data-maskfunc="krxMask.totalCount" data-maskparam="[]" data-maskorigin="" data-center-y="true">0페이지</label
+                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 30px; height: 22px; position: relative; color: rgb(147, 159, 178); border-radius: 5px; background-color: rgb(48, 57, 70); margin-left: 5px; margin-top: 0px; top: calc(50% - 11px); display: block; float: left; left: 0px;" id="MainView--krxNextBtn" data-listener-click="MainView:onClickNextKrxPage" data-center-y="true">&gt;</button
+                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 30px; height: 22px; position: relative; color: rgb(147, 159, 178); border-radius: 5px; background-color: rgb(48, 57, 70); margin-left: 5px; margin-top: 0px; top: calc(50% - 11px); display: block; float: left; left: 0px;" id="" data-listener-click="MainView:onClickNextKrxPage10" data-center-y="true">&gt;&gt;</button
+                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 30px; height: 22px; position: relative; color: rgb(147, 159, 178); border-radius: 5px; background-color: rgb(48, 57, 70); margin-left: 5px; margin-top: 0px; top: calc(50% - 11px); display: block; float: left; left: 0px;" id="" data-listener-click="MainView:onClickLastKrxPage" data-center-y="true">&gt;&gt;&gt;</button
+                ></div
+            ></div
+        ></div
+        ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 525px; height: calc((100% - 0px) - 24px); left: 0px; top: 0px; position: relative; float: right; margin-left: 0px; border-radius: 15px; background-color: rgb(30, 36, 46); padding-top: 10px; margin-top: 0px; padding-bottom: 10px;" id="MainView--sideContent" data-sgap-height="1"
+            ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: 32px; left: 0px; top: 0px; position: relative; background-color: rgba(0, 0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid;" id="MainView--prefertT"
+                ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; left: 0px; top: 0px; position: relative; color: rgb(147, 159, 178); font-size: 20px; font-weight: bold; margin-left: 15px; margin-top: 0px;     float: left;">내 컬렉션</label
+                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 30px; height: 30px; left: 0px; position: relative; font-size: 20px; background-color: rgba(0, 0, 0, 0); float: left; color: rgb(255, 255, 255); top: 0px; font-weight: bold;" data-listener-click="MainView:onClickAddPreferGroup">+</button
+                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="height: 25px; position: relative; font-size: 12px; background-color: rgb(48, 57, 70); float: right; color: rgb(255, 255, 255); font-weight: bold; margin-right: 10px; top: 0px; margin-left: 0px; margin-top: 0px; border-radius: 5px; width: 70px;" data-listener-click="MainView:onClickDeleteAllPreferGroup">전체삭제</button
+                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 50px; height: 25px; position: relative; font-size: 12px; background-color: rgb(48, 57, 70); float: right; color: rgb(255, 255, 255); top: 0px; font-weight: bold; margin-right: 10px; border-radius: 5px;" data-listener-click="MainView:onClickDeletePreferGroup">삭제</button
+                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="height: 25px; position: relative; font-size: 12px; background-color: rgb(48, 57, 70); float: right; color: rgb(255, 255, 255); font-weight: bold; margin-right: 10px; top: 0px; border-radius: 5px; width: 90px; margin-left: 0px;" data-listener-click="MainView:onClickEditPreferGroup">그룹명 수정</button
+            ></div
+            ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; left: 0px; top: 0px; position: relative; margin-top: -2.41437e-05px; margin-left: 0px; background-color: rgba(0, 0, 0, 0); border-width: 0px; border-top-style: solid; border-color: rgba(0, 0, 0, 0); border-bottom-style: solid; height: calc((100% - 0px) - 20px);" data-sgap-height="1"
+                ><div data-base="AAccordion" data-class="AAccordion" class="AAccordion-Style" style="width: 100%; height: calc((100% - 0px) - 20px); left: 0px; top: 0px; position: absolute; background-color: rgba(0, 0, 0, 0); color: rgb(147, 159, 178); border-width: 0px; font-size: 16px; font-weight: bold;" id="MainView--preferList" data-single-show="1" data-sgap-height="1" data-no-animation="1"></div
+            ></div
+        ></div
+    ></div
+    ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; left: 0px; position: relative; height: 80px; background-color: rgb(30, 36, 46); padding-top: 5px; padding-right: 25px; padding-left: 25px; margin-left: 0px; margin-top: 0px; bottom: 0px;" id="MainView--bottom"
+        ><img data-base="AImage" data-class="AImage" class="AImage-Style" style="width: 140px; height: 48px; left: 0px; top: calc(50% - 24px); position: relative; float: right;" src="Assets/Img/itfin_logo.png" data-center-y="true"
+        ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 793px; height: 100%; left: 0px; top: 0px; position: relative; float: left; background-color: rgba(0, 0, 0, 0);"
+            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: 100%; height: auto; left: 0px; top: 0px; position: relative; color: rgb(255, 255, 255); font-size: 16px; font-weight: bold;">Contact us</label
+            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: 100%; height: auto; left: 0px; top: 0px; position: relative; color: rgb(255, 255, 255); margin-top: 5px; font-size: 11px;">it-fin@it-fin.com</label
+            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: 100%; height: auto; left: 0px; top: 0px; position: relative; color: rgb(255, 255, 255); margin-top: 2px; font-size: 11px;">서울특별시 영등포구 선유로 85 한특빌딩 7층</label
+            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: 100%; height: auto; left: 0px; position: relative; color: rgb(255, 255, 255); margin-top: 2px; font-size: 14px;">COPYRIGHT 2023 ITFIN ALL RIGHTS RESERVED.</label
+        ></div
+    ></div
+></div>

@@ -1,0 +1,6 @@
+{
+  "styleName": "girdTitle",
+  "items": {
+    "gridTitle": "\r\n.gridTitle {\r\n\tposition: relative;\r\n\tfont-weight: bold;\r\n}"
+  }
+}
